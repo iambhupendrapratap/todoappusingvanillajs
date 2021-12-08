@@ -26,13 +26,6 @@ newTodo.classList.add("todo-item");
 todoDiv.appendChild(newTodo);
 
 
-
-//CHECK MARK BUTTON
- const completedButton = document.createElement("button");
- completedButton.innerHTML='<i class= "fas fa-check" ></i>';
- completedButton.classList.add("complete-btn");
- todoDiv.appendChild(completedButton);
-
  //TRASH BUTTON
  const trashButton = document.createElement("button");
  trashButton.innerHTML ='<i class= "fas fa-check" ></i>';
@@ -56,9 +49,6 @@ todoInput.value="";
          todo.remove();
      }
 
-     //CHECK MARK
-     if(item.classList[0] === "complete-bten"){
-         const todo = item.parentElement;
-         todo.classList.toggle("completed");
-     } }
+  
+ }
     
